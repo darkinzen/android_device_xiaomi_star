@@ -4,14 +4,25 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-##some RisingOS customizations
-WITH_GMS := true
-RISING_MAINTAINER="darkinzen"
-TARGET_ENABLE_BLUR := true
-TARGET_PREBUILT_LAWNCHAIR_LAUNCHER := true
+PRODUCT_BUILD_PROP_OVERRIDES += \
+	RisingMaintainer="Darkinzen"
 
-# Camera
-#$(call inherit-product-if-exists, vendor/xiaomi/star-miuicamera/products/miuicamera.mk)
+
+# Rising OS
+RISING_MAINTAINER="Darkinzen"
+TARGET_ENABLE_BLUR := false
+TARGET_PREBUILT_LAWNCHAIR_LAUNCHER := true
+WITH_GMS := true
+TARGET_CORE_GMS := true
+
+# extra add-ons for core GMS builds
+# List of add-ons
+ PRODUCT_PACKAGES += \
+    Photos \
+    AiWallpapers \
+    WallpaperEmojiPrebuilt \
+    CalculatorGooglePrebuilt \
+    CalendarGooglePrebuilt \
 
 
 # Inherit from those products. Most specific first.
@@ -30,13 +41,13 @@ PRODUCT_MANUFACTURER := Xiaomi
 PRODUCT_MODEL := M2102K1AC
 PRODUCT_NAME := lineage_star
 
-#PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
+PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 PRODUCT_SYSTEM_NAME := star_global
 PRODUCT_SYSTEM_DEVICE := star
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRIVATE_BUILD_DESC="star_global-user 14 UKQ1.231207.002 V816.0.6.0.UKAMIXM release-keys" \
-    TARGET_DEVICE=$(PRODUCT_SYSTEM_DEVICE) \
-    TARGET_PRODUCT=$(PRODUCT_SYSTEM_NAME)
+    BuildDesc="star_global-user 14 UKQ1.231207.002 V816.0.6.0.UKAMIXM release-keys" \
+    DeviceName=$(PRODUCT_SYSTEM_DEVICE) \
+    DeviceProduct=$(PRODUCT_SYSTEM_NAME)
 
 BUILD_FINGERPRINT := Xiaomi/star_global/star:14/UKQ1.231207.002/V816.0.6.0.UKAMIXM:user/release-keys
