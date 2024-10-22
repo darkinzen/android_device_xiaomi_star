@@ -13,7 +13,7 @@ fi
 
 set -e
 
-export DEVICE=mars
+export DEVICE=star
 export DEVICE_COMMON=sm8350-common
 export VENDOR=xiaomi
 export VENDOR_COMMON=${VENDOR}

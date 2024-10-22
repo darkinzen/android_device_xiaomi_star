@@ -16,11 +16,11 @@ DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay-lineage
 
 PRODUCT_PACKAGES += \
-    FrameworksResMars \
-    SettingsProviderResMars \
-    SettingsResMars \
-    SystemUIResMars \
-    WifiResMars
+    FrameworksResStar \
+    SettingsProviderResStar \
+    SettingsResStar \
+    SystemUIResStar \
+    WifiResStar
 
 # PowerShare
 PRODUCT_PACKAGES += \
@@ -38,4 +38,4 @@ PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)
 
 # Call the proprietary setup
-$(call inherit-product, vendor/xiaomi/mars/mars-vendor.mk)
+$(call inherit-product, vendor/xiaomi/star/star-vendor.mk)

@@ -16,7 +16,7 @@ function blob_fixup() {
             [ "$2" = "" ] && return 0
             sed -i "s/\x73\x74\x5F\x6C\x69\x63\x65\x6E\x73\x65\x2E\x6C\x69\x63/\x63\x61\x6D\x65\x72\x61\x5F\x63\x6E\x66\x2E\x74\x78\x74/g" "${2}"
             ;;
-        vendor/etc/camera/star_motiontuning.xml|vendor/etc/camera/mars_motiontuning.xml)
+        vendor/etc/camera/star_motiontuning.xml|vendor/etc/camera/star_motiontuning.xml)
             [ "$2" = "" ] && return 0
             sed -i 's/xml=version/xml\ version/g' "${2}"
             ;;
@@ -48,7 +48,7 @@ fi
 
 set -e
 
-export DEVICE=mars
+export DEVICE=star
 export DEVICE_COMMON=sm8350-common
 export VENDOR=xiaomi
 export VENDOR_COMMON=${VENDOR}
