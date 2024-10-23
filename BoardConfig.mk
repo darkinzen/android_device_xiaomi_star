@@ -9,6 +9,9 @@ DEVICE_PATH := device/xiaomi/star
 # Inherit from sm8350-common
 include device/xiaomi/sm8350-common/BoardConfigCommon.mk
 
+BUILD_BROKEN_ELF_PREBUILT_PRODUCT_COPY_FILES := true
+BUILD_BROKEN_DUP_RULES := true
+
 # Board
 TARGET_BOOTLOADER_BOARD_NAME := star
 
@@ -31,7 +34,7 @@ BOARD_DTBOIMG_PARTITION_SIZE := 25165824
 
 # Properties
 TARGET_VENDOR_PROP += $(DEVICE_PATH)/vendor.prop
-
+TARGET_PRODUCT_PROP += $(COMMON_PATH)/product.prop
 # Recovery
 TARGET_RECOVERY_UI_MARGIN_HEIGHT := 165
 

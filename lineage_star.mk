@@ -4,6 +4,16 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
+##some RisingOS customizations
+WITH_GMS := true
+RISING_MAINTAINER="darkinzen"
+TARGET_ENABLE_BLUR := true
+TARGET_PREBUILT_LAWNCHAIR_LAUNCHER := true
+
+# Camera
+#$(call inherit-product-if-exists, vendor/xiaomi/star-miuicamera/products/miuicamera.mk)
+
+
 # Inherit from those products. Most specific first.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
@@ -20,7 +30,7 @@ PRODUCT_MANUFACTURER := Xiaomi
 PRODUCT_MODEL := M2102K1AC
 PRODUCT_NAME := lineage_star
 
-PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
+#PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 PRODUCT_SYSTEM_NAME := star_global
 PRODUCT_SYSTEM_DEVICE := star
 
