@@ -10,10 +10,13 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 
 # Rising OS
 RISING_MAINTAINER="Darkinzen"
-TARGET_ENABLE_BLUR := false
+TARGET_ENABLE_BLUR := true
 TARGET_PREBUILT_LAWNCHAIR_LAUNCHER := true
 WITH_GMS := true
 TARGET_CORE_GMS := true
+TARGET_HAS_UDFPS := true
+EXTRA_UDFPS_ANIMATIONS := true
+TARGET_SUPPORTS_QUICK_TAP := true
 
 # extra add-ons for core GMS builds
 # List of add-ons
