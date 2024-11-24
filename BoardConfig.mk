@@ -16,6 +16,9 @@ BUILD_BROKEN_DUP_RULES := true
 # Board
 TARGET_BOOTLOADER_BOARD_NAME := star
 
+# OTA assert
+TARGET_OTA_ASSERT_DEVICE := star|mars
+
 # Display
 TARGET_SCREEN_DENSITY := 560
 
