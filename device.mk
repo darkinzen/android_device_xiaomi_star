@@ -22,6 +22,11 @@ PRODUCT_PACKAGES += \
     SystemUIResStar \
     WifiResStar
 
+# DRM
+PRODUCT_PACKAGES += \
+    libcrypto-v33
+
+
 # PowerShare
 PRODUCT_PACKAGES += \
     vendor.lineage.powershare@1.0-service.default
