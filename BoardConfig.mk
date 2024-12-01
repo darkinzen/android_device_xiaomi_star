@@ -24,6 +24,10 @@ TARGET_SCREEN_DENSITY := 560
 
 # Kernel
 TARGET_KERNEL_CONFIG += vendor/star_QGKI.config
+TARGET_KERNEL_CLANG_COMPILE := true
+TARGET_KERNEL_ADDITIONAL_FLAGS := DTC_EXT=$(shell pwd)/prebuilts/misc/linux-x86/dtc/dtc
+KERNEL_LD := LD=ld.lld
+KERNEL_FULL_LLVM := true
 
 # Kernel modules
 BOOT_KERNEL_MODULES := \
