@@ -24,7 +24,7 @@ PRODUCT_PACKAGES += \
 
 # DRM
 PRODUCT_PACKAGES += \
-    libcrypto-v33
+    libcrypto-v34
 
 
 # PowerShare
