@@ -27,7 +27,7 @@ PRODUCT_SYSTEM_DEVICE := star
 PRODUCT_BUILD_PROP_OVERRIDES += \
 	RisingMaintainer="Darkinzen"
 
-RISING_MAINTAINER="Darkinzen" #Display Name on bash
+RISING_MAINTAINER := Darkinzen
 TARGET_ENABLE_BLUR := false
 TARGET_PREBUILT_LAWNCHAIR_LAUNCHER := false
 WITH_GMS := true
@@ -35,6 +35,7 @@ TARGET_CORE_GMS := true
 TARGET_HAS_UDFPS := true
 EXTRA_UDFPS_ANIMATIONS := true
 TARGET_SUPPORTS_QUICK_TAP := true
+PRODUCT_NO_CAMERA := true
 
 # extra add-ons for core GMS builds
 # List of add-ons
@@ -47,7 +48,7 @@ TARGET_SUPPORTS_QUICK_TAP := true
 
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    BuildDesc"star_global-user 14 UKQ1.231207.002 V816.0.6.0.UKAMIXM release-keys" \
+    BuildDesc="star_global-user 14 UKQ1.231207.002 V816.0.6.0.UKAMIXM release-keys" \
     DeviceName=$(PRODUCT_SYSTEM_DEVICE) \
     DeviceProduct=$(PRODUCT_SYSTEM_NAME)
 
