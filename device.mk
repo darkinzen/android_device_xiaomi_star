@@ -26,6 +26,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     libcrypto-v34
 
+# Kernel
+KERNEL_MODULES_INSTALL := dlkm
+KERNEL_MODULES_OUT := $(OUT_DIR)/target/product/star/$(KERNEL_MODULES_INSTALL)/lib/modules
 
 # PowerShare
 PRODUCT_PACKAGES += \
@@ -45,5 +48,3 @@ PRODUCT_SOONG_NAMESPACES += \
 # Call the proprietary setup
 $(call inherit-product, vendor/xiaomi/star/star-vendor.mk)
 
-# Call the proprietary miuicamera setup
-$(call inherit-product, vendor/xiaomi/haydn-miuicamera/products/miuicamera.mk)
