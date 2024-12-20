@@ -34,6 +34,10 @@ KERNEL_MODULES_OUT := $(OUT_DIR)/target/product/star/$(KERNEL_MODULES_INSTALL)/l
 PRODUCT_PACKAGES += \
     vendor.lineage.powershare@1.0-service.default
 
+# Kernel
+KERNEL_MODULES_INSTALL := dlkm
+KERNEL_MODULES_OUT := $(OUT_DIR)/target/product/star/$(KERNEL_MODULES_INSTALL)/lib/modules
+
 # Sensors
 PRODUCT_PACKAGES += \
     sensors.xiaomi.v2

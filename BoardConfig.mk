@@ -30,10 +30,8 @@ KERNEL_FULL_LLVM := true
 
 # Kernel modules
 BOOT_KERNEL_MODULES := \
-    fts_touch_spi.ko \
-    hwid.ko \
-    msm_drm.ko \
-    xiaomi_touch.ko
+    hwid.ko
+
 BOARD_VENDOR_RAMDISK_RECOVERY_KERNEL_MODULES_LOAD := $(BOOT_KERNEL_MODULES)
 
 BOARD_VENDOR_KERNEL_MODULES := \
@@ -47,7 +45,6 @@ BOARD_VENDOR_KERNEL_MODULES := \
     $(KERNEL_MODULES_OUT)/fc0012.ko \
     $(KERNEL_MODULES_OUT)/fc0013.ko \
     $(KERNEL_MODULES_OUT)/fc2580.ko \
-    $(KERNEL_MODULES_OUT)/fts_touch_spi.ko \
     $(KERNEL_MODULES_OUT)/goodix_fod.ko \
     $(KERNEL_MODULES_OUT)/hid-aksys.ko \
     $(KERNEL_MODULES_OUT)/hwid.ko \
