@@ -47,7 +47,7 @@ TARGET_SUPPORTS_QUICK_TAP := true
 
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    BuildDesc"star_global-user 14 UKQ1.231207.002 V816.0.6.0.UKAMIXM release-keys" \
+    BuildDesc="star_global-user 14 UKQ1.231207.002 V816.0.6.0.UKAMIXM release-keys" \
     DeviceName=$(PRODUCT_SYSTEM_DEVICE) \
     DeviceProduct=$(PRODUCT_SYSTEM_NAME)
 
