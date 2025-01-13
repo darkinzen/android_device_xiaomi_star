@@ -23,17 +23,14 @@ TARGET_OTA_ASSERT_DEVICE := star|mars
 TARGET_SCREEN_DENSITY := 560
 
 # Kernel
-TARGET_KERNEL_CONFIG += vendor/star_QGKI.config
+TARGET_KERNEL_CONFIG += vendor/star-qgki_defconfig
 BOARD_RAMDISK_USE_LZ4 := true
 KERNEL_LD := LD=ld.lld
 KERNEL_FULL_LLVM := true
 
 # Kernel modules
 BOOT_KERNEL_MODULES := \
-    fts_touch_spi.ko \
-    hwid.ko \
-    msm_drm.ko \
-    xiaomi_touch.ko
+    hwid.ko
 BOARD_VENDOR_RAMDISK_RECOVERY_KERNEL_MODULES_LOAD := $(BOOT_KERNEL_MODULES)
 
 # Partitions
